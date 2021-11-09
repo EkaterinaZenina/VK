@@ -13,4 +13,6 @@ public class Vk {
     private String repostsOfPost;
     private String pinOfPost;
     private String postComplaint;
+    private String deletePost;
+    private String editPost;
 }
