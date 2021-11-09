@@ -16,18 +16,4 @@ public class Vk {
     private String deletePost;
     private String editPost;
 
-
-    private String ownerId;
-    private String fromId;
-    private String createdBy;
-    private String replyOwnerId;
-    private String friendsOnly;
-    private String copyright;
-    private String postType;
-    private String postSource;
-    private String geo;
-    private String isPinned;
-    private String markedAsAds;
-    private String donut;
-    private String postponedId;
 }
