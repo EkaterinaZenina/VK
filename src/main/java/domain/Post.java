@@ -15,10 +15,17 @@ public class Post {
     private int friendsOnly;
     private int fromId;
     private int signerId;
-    private int canPin;
-    private int canDelete;
+    private boolean canPin;
+    private boolean canDelete;
     private int canEdit;
     private int isPinned;
+
+    private CommentsInfo commentsInfo;
+    private Copyright copyright;
+    private Donut donut;
+    private LikesInfo likesInfo;
+    private RepostsInfo repostsInfo;
+    private ViewsInfo viewsInfo;
 
 
     public int getId() {
@@ -121,22 +128,6 @@ public class Post {
         this.signerId = signerId;
     }
 
-    public int getCanPin() {
-        return canPin;
-    }
-
-    public void setCanPin(int canPin) {
-        this.canPin = canPin;
-    }
-
-    public int getCanDelete() {
-        return canDelete;
-    }
-
-    public void setCanDelete(int canDelete) {
-        this.canDelete = canDelete;
-    }
-
     public int getCanEdit() {
         return canEdit;
     }
@@ -151,6 +142,70 @@ public class Post {
 
     public void setIsPinned(int isPinned) {
         this.isPinned = isPinned;
+    }
+
+    public boolean isCanPin() {
+        return canPin;
+    }
+
+    public void setCanPin(boolean canPin) {
+        this.canPin = canPin;
+    }
+
+    public boolean isCanDelete() {
+        return canDelete;
+    }
+
+    public void setCanDelete(boolean canDelete) {
+        this.canDelete = canDelete;
+    }
+
+    public CommentsInfo getCommentsInfo() {
+        return commentsInfo;
+    }
+
+    public void setCommentsInfo(CommentsInfo commentsInfo) {
+        this.commentsInfo = commentsInfo;
+    }
+
+    public Copyright getCopyright() {
+        return copyright;
+    }
+
+    public void setCopyright(Copyright copyright) {
+        this.copyright = copyright;
+    }
+
+    public Donut getDonut() {
+        return donut;
+    }
+
+    public void setDonut(Donut donut) {
+        this.donut = donut;
+    }
+
+    public LikesInfo getLikesInfo() {
+        return likesInfo;
+    }
+
+    public void setLikesInfo(LikesInfo likesInfo) {
+        this.likesInfo = likesInfo;
+    }
+
+    public RepostsInfo getRepostsInfo() {
+        return repostsInfo;
+    }
+
+    public void setRepostsInfo(RepostsInfo repostsInfo) {
+        this.repostsInfo = repostsInfo;
+    }
+
+    public ViewsInfo getViewsInfo() {
+        return viewsInfo;
+    }
+
+    public void setViewsInfo(ViewsInfo viewsInfo) {
+        this.viewsInfo = viewsInfo;
     }
 }
 
